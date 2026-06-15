@@ -16,8 +16,9 @@ document.querySelectorAll('[data-anim]').forEach(el => observer.observe(el));
 // ── Sticky Nav ──
 const nav = document.getElementById('nav');
 if (nav) {
+  const alwaysScrolled = nav.classList.contains('scrolled');
   window.addEventListener('scroll', () => {
-    nav.classList.toggle('scrolled', window.scrollY > 40);
+    nav.classList.toggle('scrolled', alwaysScrolled || window.scrollY > 40);
   }, { passive: true });
 }
 

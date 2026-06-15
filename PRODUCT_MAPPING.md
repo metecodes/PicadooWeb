@@ -30,7 +30,7 @@ Bu belge, web sitesindeki ürün iddialarının mobil uygulama kaynak koduyla e�
 | --- | --- | --- | --- |
 | Dinamik şablon galerisi | `HomeScreen.js`, Supabase `templates` bucket | Ana sayfa özellikleri | Eşleşiyor; kesin adet kullanılmıyor |
 | Kategoriler | Hayvanlar, doğa, uzay, deniz | Ana sayfa özellik kartı | Eşleşiyor |
-| Kayıtlı boyamalar | `savedColorings.js`, `HomeScreen.js` | Ana sayfa önizleme metni | Eşleşiyor |
+| Kayıtlı boyamalar | `savedColorings.js`, `HomeScreen.js`, `ColoringScreen.js` | Ana sayfa ve Premium | Yalnız Premium |
 | Kalem, fırça, pastel, silgi | `ColoringScreen.js` | Ana sayfa araçlar kartı | Eşleşiyor |
 | S/M/L fırça boyutları | `ColoringScreen.js` | Genel araç anlatımı | Özetlenmiş |
 | XS-XL silgi boyutları | `ColoringScreen.js` | Genel araç anlatımı | Özetlenmiş |
@@ -86,6 +86,9 @@ Toplam 9 oyun bulunur. Web sitesi bunu `4 küçük + 5 büyük` ve `1-10 yaşa u
 | Yıllık 2 ay avantaj | `PremiumScreen.js` | Premium sayfası | Eşleşiyor |
 | Reklamları kaldırma | `SafeBannerAd.js` | Ana sayfa ve Premium | Eşleşiyor |
 | Premium şablon işaretleri | `is_premium` alanı | Premium sayfası | Ürün niyeti mevcut |
+| Kayıtlı boyamalar | `HomeScreen.js`, `ColoringScreen.js` | Premium sayfası | Yalnız Premium |
+| Mini oyunlar | `GamesTabScreen.js`, `MiniGamePlayScreen.js` | Premium sayfası | Yalnız Premium |
+| JPG galeri aktarımı | `ColoringScreen.js`, `react-native-view-shot`, `expo-media-library` | Premium sayfası | Yalnız Premium |
 | AI kredileri | Abonelikten bağımsız | Premium sayfası | Eşleşiyor |
 | Reklam yapılandırması | Çocuklara yönelik, reşit olmayan, G dereceli, kişiselleştirilmemiş | Gizlilik ve ebeveyn sayfası | Eşleşiyor |
 
@@ -106,7 +109,7 @@ Kaynak: `ParentScreen.js` ve `src/i18n/locales/`.
 - `Tüm temel içerikler çevrimdışı`: hesap, AI ve çevrimiçi galeri internet gerektiriyor.
 - `Premium AI kredisi verir`: yanlış; krediler ayrı satın alınır.
 - `Premium özel fırçaları açar`: boyama ekranında Premium kontrolü uygulanmamış.
-- `Sınırsız kaydetme Premium özelliğidir`: kayıt özelliğinde Premium sınırı uygulanmamış.
+- `Sınırsız kaydetme Premium özelliğidir`: Premium bariyeri artık kayıt oluşturma, açma ve yönetme akışlarında uygulanıyor.
 - `Kaynak ve çıktı fotoğrafları saklanmaz`: kaynak görsel geçici; üretilen çıktı Supabase'de saklanıyor.
 
 ## Uygulama kodunda kalan ürün çelişkileri
@@ -117,4 +120,3 @@ Bu maddeler web sitesine taşınmadı, fakat mobil projede ayrıca düzeltilmeli
 2. Bazı eski çeviri dosyalarında ücretsiz deneme, sınırsız AI veya günlük ücretsiz AI ifadeleri bulunuyor.
 3. `PremiumScreen.js` özel fırça/desen vaat ediyor; `ColoringScreen.js` içinde Premium erişim kontrolü yok.
 4. `HomeScreen.js` premium şablona dokununca Premium ekranı yerine ebeveyn ekranına yönlendiriyor ve premium kullanıcı kontrolü yapmıyor.
-
