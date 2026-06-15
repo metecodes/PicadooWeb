@@ -1,0 +1,263 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Ebeveynler İçin — Picadoo Güvenli Çocuk Uygulaması</title>
+  <meta name="description" content="Picadoo'nun ebeveyn kontrol özellikleri: günlük süre limiti, aktivite takibi, güvenli içerik ve şifreli ebeveyn paneli." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/picadoo-icon.png" />
+  <style>
+    .parents-hero { background: linear-gradient(160deg,#E8F5E9,#F3E5F5,#E3F2FD); }
+
+    .safety-grid { display: grid; grid-template-columns: repeat(2, 1fr); gap: 24px; margin-top: 48px; }
+    .safety-card {
+      background: #fff;
+      border-radius: var(--radius-lg);
+      padding: 36px;
+      box-shadow: var(--shadow-sm);
+      border: 1.5px solid var(--gray-2);
+      transition: var(--transition);
+      display: flex; flex-direction: column; gap: 16px;
+    }
+    .safety-card:hover { transform: translateY(-4px); box-shadow: var(--shadow-md); }
+    .safety-icon { font-size: 40px; }
+    .safety-card h3 { font-size: 20px; font-weight: 800; color: var(--dark); }
+    .safety-card p { font-size: 14px; color: var(--gray-text); line-height: 1.7; }
+
+    .feature-detail { padding: 80px 0; }
+    .feature-detail:nth-child(even) { background: var(--gray-1); }
+    .feature-detail-inner { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: center; }
+    .feature-detail-inner.reverse { direction: rtl; }
+    .feature-detail-inner.reverse > * { direction: ltr; }
+    .feature-detail-text h2 { font-size: 34px; font-weight: 900; color: var(--dark); margin-bottom: 16px; }
+    .feature-detail-text p { font-size: 16px; color: var(--gray-text); line-height: 1.8; margin-bottom: 20px; }
+    .feature-detail-list { display: flex; flex-direction: column; gap: 12px; }
+    .fdl-item { display: flex; align-items: flex-start; gap: 12px; }
+    .fdl-icon { width: 28px; height: 28px; border-radius: 8px; display: flex; align-items: center; justify-content: center; font-size: 14px; flex-shrink: 0; }
+    .fdl-item h4 { font-size: 14px; font-weight: 800; color: var(--dark); margin-bottom: 2px; }
+    .fdl-item p { font-size: 13px; color: var(--gray-text); }
+    .feature-detail-visual { background: var(--gray-1); border-radius: var(--radius-xl); overflow: hidden; }
+    .feature-detail-visual img { width: 100%; display: block; }
+
+    .faq-section { padding: 80px 0; }
+    .faq-list { max-width: 720px; margin: 0 auto; display: flex; flex-direction: column; gap: 12px; }
+    .faq-item { background: #fff; border-radius: var(--radius-md); border: 1.5px solid var(--gray-2); overflow: hidden; }
+    .faq-q { display: flex; width: 100%; justify-content: space-between; align-items: center; padding: 20px 24px; cursor: pointer; font-family: var(--font-main); font-size: 15px; font-weight: 700; color: var(--dark); text-align: left; background: #fff; border: 0; transition: background var(--transition); }
+    .faq-q:hover { background: var(--gray-1); }
+    .faq-q .faq-arrow { font-size: 20px; transition: transform var(--transition); color: var(--gray-text); }
+    .faq-item.open .faq-arrow { transform: rotate(45deg); }
+    .faq-a { max-height: 0; overflow: hidden; transition: max-height 0.4s ease, padding 0.3s ease; padding: 0 24px; font-size: 14px; color: var(--gray-text); line-height: 1.8; }
+    .faq-item.open .faq-a { max-height: 200px; padding: 0 24px 20px; }
+
+    @media (max-width: 768px) {
+      .safety-grid { grid-template-columns: 1fr; }
+      .feature-detail-inner { grid-template-columns: 1fr; gap: 40px; }
+      .feature-detail-inner.reverse { direction: ltr; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo">
+        <img class="logo-icon" src="../assets/picadoo-icon.png" alt="" />
+        <span class="logo-text">Picadoo</span>
+      </a>
+      <ul class="nav-links" id="primaryNavigation">
+        <li><a href="../index.html#features">Özellikler</a></li>
+        <li><a href="premium.html">Premium</a></li>
+        <li><a href="parents.html" style="color:var(--green)">Ebeveynler</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul>
+      <div class="nav-cta">
+        <a href="../index.html#download" class="btn btn-primary btn-sm">Yayını Takip Et</a>
+      </div>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Menüyü aç veya kapat" aria-controls="primaryNavigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero parents-hero">
+    <div class="container">
+      <div class="page-hero-tag" style="background:rgba(76,175,130,0.12);color:var(--green);display:inline-block;padding:6px 16px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:16px;">🛡️ EBEVEYNİN KONTROLÜNDE</div>
+      <h1>Çocuğunuz Güvende,<br/><span class="gradient-text">Siz Huzurda</span></h1>
+      <p>Picadoo, ebeveyn odaklı tasarımıyla çocuğunuzun dijital deneyimini sizin elinize verir.</p>
+    </div>
+  </section>
+
+  <section class="content-section" id="safety">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <div class="section-tag" style="color:var(--green);background:rgba(76,175,130,0.1)">Güvenlik</div>
+        <h2 class="section-title">Güvenliği Önce Biz<br/><span class="gradient-text">Düşündük</span></h2>
+        <p class="section-sub">Çocuğunuz Picadoo kullanırken siz de rahat olun.</p>
+      </div>
+      <div class="safety-grid">
+        <div class="safety-card" data-anim="fade-up" data-delay="0">
+          <div class="safety-icon">🔒</div>
+          <h3>Şifreli Ebeveyn Paneli</h3>
+          <p>Ebeveyn paneli hesap şifresiyle doğrulanır. Süre ayarlarını değiştirmek için şifre yeniden istenir.</p>
+        </div>
+        <div class="safety-card" data-anim="fade-up" data-delay="100">
+          <div class="safety-icon">⏱️</div>
+          <h3>Günlük Süre Limiti</h3>
+          <p>15, 30, 45, 60, 90, 120 veya 180 dakika seçin; dilerseniz sınırsız kullanım tanımlayın.</p>
+        </div>
+        <div class="safety-card" data-anim="fade-up" data-delay="200">
+          <div class="safety-icon">📊</div>
+          <h3>Aktivite Takibi</h3>
+          <p>Haftalık kullanım süresi, toplam oturum, ortalama süre, kayıtlı boyamalar, AI üretimleri ve son aktiviteleri görüntüleyin.</p>
+        </div>
+        <div class="safety-card" data-anim="fade-up" data-delay="300">
+          <div class="safety-icon">✅</div>
+          <h3>Yaşa Göre Oyunlar</h3>
+          <p>Mini oyunlar küçük çocuklar ve 6-10 yaş grubu için iki ayrı bölümde sunulur.</p>
+        </div>
+        <div class="safety-card" data-anim="fade-up" data-delay="400">
+          <div class="safety-icon">🚫</div>
+          <h3>Sosyal Medya Yok</h3>
+          <p>Uygulama içinde herhangi bir sosyal medya entegrasyonu veya çocuğun diğerleriyle iletişim kurmasını sağlayacak özellik bulunmaz.</p>
+        </div>
+        <div class="safety-card" data-anim="fade-up" data-delay="500">
+          <div class="safety-icon">📋</div>
+          <h3>Gizlilik Odaklı Yapı</h3>
+          <p>Çocuklara yönelik reklam yapılandırması, kişiselleştirilmemiş reklam isteği ve veri sahibi başvuru kanalları bulunur.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="feature-detail" id="limits">
+    <div class="container">
+      <div class="feature-detail-inner" data-anim="fade-up">
+        <div class="feature-detail-text">
+          <div class="section-tag" style="display:inline-block;margin-bottom:16px;color:var(--orange);background:rgba(255,107,53,0.1)">Süre Kontrolü</div>
+          <h2>Ekran Süresini<br/>Sen Belirle</h2>
+          <p>Günlük kullanım süresini belirleyin. Limit dolduğunda uygulama uyarı gösterir; yalnızca ebeveyn şifresiyle ek süre verilebilir.</p>
+          <div class="feature-detail-list">
+            <div class="fdl-item">
+              <div class="fdl-icon" style="background:rgba(255,107,53,0.1)">⏰</div>
+              <div>
+                <h4>Varsayılan 60 dakika/gün</h4>
+                <p>Yeni hesaplarda kullanılan başlangıç ayarı</p>
+              </div>
+            </div>
+            <div class="fdl-item">
+              <div class="fdl-icon" style="background:rgba(124,92,191,0.1)">🎛️</div>
+              <div>
+                <h4>Tam özelleştirme</h4>
+                <p>15-180 dakika arasından veya sınırsız kullanımdan seçim yapın</p>
+              </div>
+            </div>
+            <div class="fdl-item">
+              <div class="fdl-icon" style="background:rgba(76,175,130,0.1)">🔔</div>
+              <div>
+                <h4>Şifreyle ek süre</h4>
+                <p>Limit dolduğunda 15, 30 veya 60 dakika eklenebilir</p>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="feature-detail-visual">
+          <img src="../assets/picadoo_parent_screen_1781476598072.png" alt="Temsili Picadoo ebeveyn paneli önizlemesi" loading="lazy" decoding="async" />
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="faq-section">
+    <div class="container">
+      <div class="section-header" data-anim="fade-up">
+        <div class="section-tag" style="color:var(--purple);background:rgba(124,92,191,0.1)">Sorular</div>
+        <h2 class="section-title">Sıkça Sorulan<br/><span class="gradient-text">Sorular</span></h2>
+      </div>
+      <div class="faq-list" data-anim="fade-up" data-delay="100">
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-1">Çocuğum ebeveyn ayarlarını değiştirebilir mi?<span class="faq-arrow" aria-hidden="true">+</span></button>
+          <div class="faq-a" id="faq-answer-1">Hayır. Ebeveyn paneli ve süre değişiklikleri hesap şifresiyle doğrulanır.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-2">Uygulama çocuğumun verilerini topluyor mu?<span class="faq-arrow" aria-hidden="true">+</span></button>
+          <div class="faq-a" id="faq-answer-2">Sadece uygulamanın çalışması için gerekli minimum veriler toplanır. Reklam amaçlı veri toplanmaz. Ayrıntılar için Gizlilik Politikamızı inceleyebilirsiniz.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-3">Reklamlar çocuğuma nasıl gösterilir?<span class="faq-arrow" aria-hidden="true">+</span></button>
+          <div class="faq-a" id="faq-answer-3">Ücretsiz versiyonda banner reklamlar gösterilebilir. Reklamların çocuklara yönelik ve kişiselleştirilmemiş biçimde yapılandırılması hedeflenir. Premium'da reklam gösterilmez.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-4">Süre limiti dolduğunda ne olur?<span class="faq-arrow" aria-hidden="true">+</span></button>
+          <div class="faq-a" id="faq-answer-4">Uygulama günlük sürenin dolduğunu bildiren bir pencere gösterir. Ebeveyn hesap şifresini doğrulayarak 15, 30 veya 60 dakika ek süre verebilir.</div>
+        </div>
+        <div class="faq-item">
+          <button class="faq-q" type="button" aria-expanded="false" aria-controls="faq-answer-5">İnternet bağlantısı şart mı?<span class="faq-arrow" aria-hidden="true">+</span></button>
+          <div class="faq-a" id="faq-answer-5">AI dönüşümü, hesap işlemleri ve çevrimiçi şablon galerisi internet gerektirir. Bazı oyun ve cihazda kayıtlı boyama işlevleri bağlantı olmadan kullanılabilir.</div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section class="download" id="download">
+    <div class="download-bg"><div class="download-blob dl-b1"></div><div class="download-blob dl-b2"></div></div>
+    <div class="container">
+      <div class="download-content" data-anim="fade-up">
+        <h2>Yakında Başlıyoruz</h2>
+        <p>Picadoo App Store ve Google Play'de yayınlandığında burada yerini alacak.</p>
+        <div class="store-buttons">
+          <div class="store-btn" aria-disabled="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M18.71 19.5c-.83 1.24-1.71 2.45-3.05 2.47-1.34.03-1.77-.79-3.29-.79-1.53 0-2 .77-3.27.82-1.31.05-2.3-1.32-3.14-2.53C4.25 17 2.94 12.45 4.7 9.39c.87-1.52 2.43-2.48 4.12-2.51 1.28-.02 2.5.87 3.29.87.78 0 2.26-1.07 3.8-.91.65.03 2.47.26 3.64 1.98-.09.06-2.17 1.28-2.15 3.81.03 3.02 2.65 4.03 2.68 4.04-.03.07-.42 1.44-1.38 2.83M13 3.5c.73-.83 1.94-1.46 2.94-1.5.13 1.17-.34 2.35-1.04 3.19-.69.85-1.83 1.51-2.95 1.42-.15-1.15.41-2.35 1.05-3.11"/></svg>
+            <div class="store-btn-text"><span class="store-label">App Store</span><span class="store-sub">Yakında</span></div>
+          </div>
+          <div class="store-btn" aria-disabled="true">
+            <svg width="28" height="28" viewBox="0 0 24 24" fill="currentColor"><path d="M3.18 23.76c.33.18.7.22 1.05.14l12.27-12.27-2.6-2.6L3.18 23.76zm18.4-11.75L18.1 9.82 15.4 12l2.7 2.18 3.5-2.17c.99-.62.99-1.63-.02-2.17zm-17.3-9.87c-.06.18-.09.38-.09.6v18.52c0 .22.03.42.09.6l10.8-10.8L4.28 2.14zM15.4 12L3.18.24C2.83.16 2.46.2 2.13.38c-1.03.57-1.03 1.58-.04 2.18l12.13 7.7-2.82 1.74z"/></svg>
+            <div class="store-btn-text"><span class="store-label">Google Play</span><span class="store-sub">Yakında</span></div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo"><img class="logo-icon" src="../assets/picadoo-icon.png" alt="" /><span class="logo-text" style="color:#fff">Picadoo</span></a>
+          <p>Çocuklar için güvenli, eğlenceli ve yaratıcı dijital boyama deneyimi.</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col"><h4>Uygulama</h4><ul><li><a href="../index.html#features">Özellikler</a></li><li><a href="premium.html">Premium</a></li></ul></div>
+          <div class="footer-col"><h4>Yasal</h4><ul><li><a href="privacy.html">Gizlilik</a></li><li><a href="terms.html">Koşullar</a></li><li><a href="kvkk.html">KVKK</a></li></ul></div>
+          <div class="footer-col"><h4>Destek</h4><ul><li><a href="contact.html">İletişim</a></li></ul></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Picadoo. Tüm hakları saklıdır.</p>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../i18n.js"></script>
+  <script src="../app.js"></script>
+  <script>
+    // FAQ accordion
+    document.querySelectorAll('.faq-q').forEach(q => {
+      q.addEventListener('click', () => {
+        const item = q.parentElement;
+        const isOpen = item.classList.contains('open');
+        document.querySelectorAll('.faq-item').forEach(i => {
+          i.classList.remove('open');
+          i.querySelector('.faq-q').setAttribute('aria-expanded', 'false');
+        });
+        if (!isOpen) {
+          item.classList.add('open');
+          q.setAttribute('aria-expanded', 'true');
+        }
+      });
+    });
+  </script>
+</body>
+</html>

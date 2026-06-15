@@ -1,0 +1,220 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>İletişim — Picadoo</title>
+  <meta name="description" content="Picadoo ile iletişime geçin. Destek, öneri veya iş birliği için bize ulaşın." />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/picadoo-icon.png" />
+  <style>
+    .contact-layout { display: grid; grid-template-columns: 1fr 1fr; gap: 80px; align-items: start; }
+    .contact-info h2 { font-size: 36px; font-weight: 900; color: var(--dark); margin-bottom: 16px; }
+    .contact-info p { font-size: 16px; color: var(--gray-text); line-height: 1.8; margin-bottom: 36px; }
+    .contact-channels { display: flex; flex-direction: column; gap: 16px; }
+    .contact-channel {
+      display: flex; align-items: center; gap: 16px;
+      padding: 20px;
+      background: var(--gray-1);
+      border-radius: var(--radius-md);
+      transition: var(--transition);
+    }
+    .contact-channel:hover { background: var(--gray-2); }
+    .cc-icon { width: 48px; height: 48px; border-radius: 14px; display: flex; align-items: center; justify-content: center; font-size: 22px; flex-shrink: 0; }
+    .cc-text h4 { font-size: 14px; font-weight: 800; color: var(--dark); margin-bottom: 2px; }
+    .cc-text p { font-size: 13px; color: var(--gray-text); }
+    .cc-text a { color: var(--orange); font-weight: 700; font-size: 14px; }
+
+    .contact-form-card { background: #fff; border-radius: var(--radius-xl); padding: 48px; box-shadow: var(--shadow-md); border: 1.5px solid var(--gray-2); }
+    .contact-form-card h3 { font-size: 24px; font-weight: 900; color: var(--dark); margin-bottom: 8px; }
+    .contact-form-card p { font-size: 14px; color: var(--gray-text); margin-bottom: 28px; }
+    .form-group { margin-bottom: 20px; }
+    .form-group label { display: block; font-size: 13px; font-weight: 700; color: var(--dark); margin-bottom: 6px; }
+    .form-group input, .form-group select, .form-group textarea {
+      width: 100%;
+      padding: 12px 16px;
+      border: 1.5px solid var(--gray-2);
+      border-radius: var(--radius-sm);
+      font-family: var(--font-main);
+      font-size: 14px;
+      color: var(--dark);
+      background: var(--gray-1);
+      transition: border-color var(--transition);
+      outline: none;
+    }
+    .form-group input:focus, .form-group select:focus, .form-group textarea:focus {
+      border-color: var(--orange);
+      background: #fff;
+    }
+    .form-group textarea { resize: vertical; min-height: 120px; }
+    .form-row { display: grid; grid-template-columns: 1fr 1fr; gap: 16px; }
+    .form-submit { width: 100%; }
+    .form-note { font-size: 11px; color: var(--gray-text); margin-top: 12px; text-align: center; }
+    .form-success { display: none; text-align: center; padding: 24px; }
+    .form-success.show { display: block; }
+    .form-success-icon { font-size: 48px; margin-bottom: 16px; }
+    .form-success h3 { font-size: 22px; font-weight: 800; color: var(--dark); margin-bottom: 8px; }
+    .form-success p { font-size: 14px; color: var(--gray-text); }
+
+    @media (max-width: 768px) {
+      .contact-layout { grid-template-columns: 1fr; }
+      .form-row { grid-template-columns: 1fr; }
+      .contact-form-card { padding: 28px; }
+    }
+  </style>
+</head>
+<body>
+
+  <nav class="nav scrolled" id="nav">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo"><img class="logo-icon" src="../assets/picadoo-icon.png" alt="" /><span class="logo-text">Picadoo</span></a>
+      <ul class="nav-links" id="primaryNavigation">
+        <li><a href="../index.html#features">Özellikler</a></li>
+        <li><a href="premium.html">Premium</a></li>
+        <li><a href="parents.html">Ebeveynler</a></li>
+        <li><a href="contact.html" style="color:var(--orange)">İletişim</a></li>
+      </ul>
+      <div class="nav-cta"><a href="../index.html#download" class="btn btn-primary btn-sm">Yayını Takip Et</a></div>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Menüyü aç veya kapat" aria-controls="primaryNavigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <section class="page-hero" style="background:linear-gradient(160deg,#FFF8F4,#FFF0FF);">
+    <div class="container">
+      <div class="page-hero-tag" style="background:rgba(255,107,53,0.1);color:var(--orange);display:inline-block;padding:6px 16px;border-radius:999px;font-size:12px;font-weight:800;letter-spacing:1px;margin-bottom:16px;">📬 İLETİŞİM</div>
+      <h1>Merhaba! <span class="gradient-text">Nasıl Yardımcı Olabiliriz?</span></h1>
+      <p>Sorularınız, önerileriniz veya iş birliği teklifleriniz için bize ulaşın. 24 saat içinde yanıt vermeyi hedefliyoruz.</p>
+    </div>
+  </section>
+
+  <section class="content-section">
+    <div class="container">
+      <div class="contact-layout">
+        <div class="contact-info" data-anim="fade-up">
+          <h2>Bize Ulaşın</h2>
+          <p>Teknik destek, iade talebi, iş birliği önerisi veya herhangi bir sorunuz için aşağıdaki kanalları kullanabilirsiniz.</p>
+          <div class="contact-channels">
+            <div class="contact-channel">
+              <div class="cc-icon" style="background:rgba(255,107,53,0.1)">📧</div>
+              <div class="cc-text">
+                <h4>E-posta</h4>
+                <p>Genel sorular & destek</p>
+                <a href="mailto:algoritmatolyesi@gmail.com">algoritmatolyesi@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="cc-icon" style="background:rgba(124,92,191,0.1)">🤝</div>
+              <div class="cc-text">
+                <h4>İş Birliği</h4>
+                <p>Ortaklık ve iş fırsatları</p>
+                <a href="mailto:algoritmatolyesi@gmail.com">algoritmatolyesi@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="cc-icon" style="background:rgba(233,30,99,0.1)">🔒</div>
+              <div class="cc-text">
+                <h4>Gizlilik & Veri</h4>
+                <p>KVKK ve veri silme talepleri</p>
+                <a href="mailto:algoritmatolyesi@gmail.com">algoritmatolyesi@gmail.com</a>
+              </div>
+            </div>
+            <div class="contact-channel">
+              <div class="cc-icon" style="background:rgba(76,175,130,0.1)">⏱️</div>
+              <div class="cc-text">
+                <h4>Yanıt Süresi</h4>
+                <p>Genellikle 24 saat içinde yanıt veriyoruz. Hafta içi 09:00–18:00 arasında aktifiz.</p>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-form-card" data-anim="fade-up" data-delay="150">
+          <h3>Mesaj Gönder</h3>
+          <p>Formu doldurun; gönder düğmesi e-posta uygulamanızda hazır bir mesaj oluşturur.</p>
+          <form id="contactForm">
+            <div class="form-row">
+              <div class="form-group">
+                <label for="firstName">Ad</label>
+                <input type="text" id="firstName" name="firstName" autocomplete="given-name" placeholder="Adınız" required />
+              </div>
+              <div class="form-group">
+                <label for="lastName">Soyad</label>
+                <input type="text" id="lastName" name="lastName" autocomplete="family-name" placeholder="Soyadınız" required />
+              </div>
+            </div>
+            <div class="form-group">
+              <label for="email">E-posta</label>
+              <input type="email" id="email" name="email" autocomplete="email" placeholder="ornek@email.com" required />
+            </div>
+            <div class="form-group">
+              <label for="subject">Konu</label>
+              <select id="subject" name="subject" required>
+                <option value="">Konu seçin...</option>
+                <option>Teknik Destek</option>
+                <option>İade Talebi</option>
+                <option>Uygulama Önerisi</option>
+                <option>İş Birliği</option>
+                <option>Veri Silme Talebi (KVKK)</option>
+                <option>Diğer</option>
+              </select>
+            </div>
+            <div class="form-group">
+              <label for="message">Mesaj</label>
+              <textarea id="message" name="message" placeholder="Mesajınızı buraya yazın..." required></textarea>
+            </div>
+            <button type="submit" class="btn btn-primary btn-lg form-submit">Gönder</button>
+            <p class="form-note">Bilgileriniz bu web sitesinde saklanmaz. E-posta uygulamanız açıldığında gönderimi siz tamamlarsınız. Ayrıntılar için <a href="privacy.html">Gizlilik Politikası</a>.</p>
+          </form>
+          <div class="form-success" id="formSuccess">
+            <div class="form-success-icon">✉️</div>
+            <h3>E-posta Taslağı Hazırlandı</h3>
+            <p>Gönderimi tamamlamak için e-posta uygulamanızı kontrol edin.</p>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-top">
+        <div class="footer-brand">
+          <a href="../index.html" class="nav-logo"><img class="logo-icon" src="../assets/picadoo-icon.png" alt="" /><span class="logo-text" style="color:#fff">Picadoo</span></a>
+          <p>Çocuklar için güvenli, eğlenceli ve yaratıcı dijital boyama deneyimi.</p>
+        </div>
+        <div class="footer-links-grid">
+          <div class="footer-col"><h4>Uygulama</h4><ul><li><a href="../index.html#features">Özellikler</a></li><li><a href="premium.html">Premium</a></li></ul></div>
+          <div class="footer-col"><h4>Yasal</h4><ul><li><a href="privacy.html">Gizlilik</a></li><li><a href="terms.html">Koşullar</a></li><li><a href="kvkk.html">KVKK</a></li></ul></div>
+          <div class="footer-col"><h4>Destek</h4><ul><li><a href="contact.html">İletişim</a></li><li><a href="parents.html">Ebeveynler</a></li></ul></div>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <p>© 2026 Picadoo. Tüm hakları saklıdır.</p>
+        <div class="footer-bottom-links"><a href="privacy.html">Gizlilik</a><a href="terms.html">Koşullar</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <script src="../i18n.js"></script>
+  <script src="../app.js"></script>
+  <script>
+    document.getElementById('contactForm').addEventListener('submit', function(e) {
+      e.preventDefault();
+      const firstName = document.getElementById('firstName').value.trim();
+      const lastName = document.getElementById('lastName').value.trim();
+      const email = document.getElementById('email').value.trim();
+      const subject = document.getElementById('subject').value;
+      const message = document.getElementById('message').value.trim();
+      const body = `Ad Soyad: ${firstName} ${lastName}\nE-posta: ${email}\n\n${message}`;
+      const mailto = `mailto:algoritmatolyesi@gmail.com?subject=${encodeURIComponent(`[Picadoo] ${subject}`)}&body=${encodeURIComponent(body)}`;
+
+      document.getElementById('formSuccess').classList.add('show');
+      window.location.href = mailto;
+    });
+  </script>
+</body>
+</html>
