@@ -248,11 +248,18 @@
     }
   };
 
+  Object.entries(window.PICADOO_I18N_CONTENT || {}).forEach(([lang, entries]) => {
+    translations[lang] = { ...(entries || {}), ...(translations[lang] || {}) };
+  });
+
   const originalText = new WeakMap();
-  const translatableSelector = 'body *:not(script):not(style):not(option)';
+  const originalAttributes = new WeakMap();
+  const translatableSelector = 'body *:not(script):not(style)';
 
   function translateTextNodes(lang) {
-    const dictionary = translations[lang] || {};
+    const dictionary = lang === 'tr'
+      ? {}
+      : { ...(translations.en || {}), ...(translations[lang] || {}) };
     document.querySelectorAll(translatableSelector).forEach((element) => {
       element.childNodes.forEach((node) => {
         if (node.nodeType !== Node.TEXT_NODE || !node.textContent.trim()) return;
@@ -271,8 +278,45 @@
     });
   }
 
+  function translateAttributes(lang) {
+    const dictionary = lang === 'tr'
+      ? {}
+      : { ...(translations.en || {}), ...(translations[lang] || {}) };
+    const attributes = ['placeholder', 'aria-label', 'title', 'alt'];
+    document.querySelectorAll('*').forEach((element) => {
+      attributes.forEach((attribute) => {
+        if (!element.hasAttribute(attribute)) return;
+        let originals = originalAttributes.get(element);
+        if (!originals) {
+          originals = {};
+          originalAttributes.set(element, originals);
+        }
+        if (!(attribute in originals)) originals[attribute] = element.getAttribute(attribute);
+        const original = originals[attribute];
+        element.setAttribute(attribute, lang === 'tr' ? original : (dictionary[original] || original));
+      });
+    });
+
+    document.querySelectorAll('meta[name="description"], meta[property="og:title"], meta[property="og:description"], meta[name="twitter:description"]').forEach((element) => {
+      let originals = originalAttributes.get(element);
+      if (!originals) {
+        originals = {};
+        originalAttributes.set(element, originals);
+      }
+      if (!('content' in originals)) originals.content = element.getAttribute('content');
+      const original = originals.content;
+      element.setAttribute('content', lang === 'tr' ? original : (dictionary[original] || original));
+    });
+
+    if (!document.documentElement.dataset.originalTitle) {
+      document.documentElement.dataset.originalTitle = document.title;
+    }
+    const originalTitle = document.documentElement.dataset.originalTitle;
+    document.title = lang === 'tr' ? originalTitle : (dictionary[originalTitle] || originalTitle);
+  }
+
   function updateLegalNotice(lang) {
-    const legalPage = /\/(privacy|terms|kvkk)\.html$/.test(location.pathname);
+    const legalPage = /\/(privacy|terms|kvkk|account-deletion)(?:\.html)?$/.test(location.pathname);
     let notice = document.querySelector('.legal-language-notice');
     if (!legalPage || lang === 'tr') {
       notice?.remove();
@@ -281,7 +325,7 @@
     if (!notice) {
       notice = document.createElement('div');
       notice.className = 'legal-language-notice';
-      document.querySelector('.page-hero')?.after(notice);
+      document.querySelector('.legal-content')?.prepend(notice);
     }
     const messages = {
       en: 'This legal document is provided in Turkish. The Turkish text is the authoritative version.',
@@ -301,6 +345,7 @@
     document.documentElement.lang = lang;
     document.documentElement.dir = languages[lang].dir || 'ltr';
     translateTextNodes(lang);
+    translateAttributes(lang);
     updateLegalNotice(lang);
     document.querySelectorAll('.language-option').forEach((button) => {
       const active = button.dataset.language === lang;

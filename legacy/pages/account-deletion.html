@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="tr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hesap Silme Talebi — Picadoo</title>
+  <meta name="description" content="Picadoo hesabınızı ve hesabınızla ilişkili verileri silme talebi oluşturun." />
+  <meta name="theme-color" content="#FFF8F4" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link href="https://fonts.googleapis.com/css2?family=Outfit:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet" />
+  <link rel="stylesheet" href="../styles.css" />
+  <link rel="icon" href="../assets/picadoo-icon.png" />
+  <style>
+    .deletion-content { max-width: 880px; margin: 0 auto; padding: 120px 24px 100px; }
+    .deletion-content h1 { font-size: clamp(34px, 6vw, 52px); line-height: 1.05; font-weight: 900; color: var(--dark); margin: 12px 0 18px; }
+    .deletion-lead { max-width: 720px; font-size: 18px; color: var(--gray-text); line-height: 1.75; margin-bottom: 30px; }
+    .deletion-tag { display: inline-block; padding: 7px 16px; border-radius: 999px; font-size: 11px; font-weight: 800; letter-spacing: 1px; background: rgba(255,107,53,0.1); color: var(--orange); }
+    .request-card { background: linear-gradient(135deg, rgba(255,107,53,0.08), rgba(124,92,191,0.08)); border: 1.5px solid rgba(124,92,191,0.18); border-radius: 28px; padding: 30px; margin: 28px 0; }
+    .request-card h2, .info-card h2 { font-size: 23px; font-weight: 900; color: var(--dark); margin-bottom: 12px; }
+    .request-card p, .info-card p, .info-card li { font-size: 15px; color: var(--gray-text); line-height: 1.75; }
+    .request-button { display: inline-flex; align-items: center; justify-content: center; margin-top: 18px; padding: 15px 22px; border-radius: 16px; background: var(--orange); color: #fff; font-weight: 800; box-shadow: 0 8px 24px rgba(255,107,53,0.25); }
+    .request-button:hover { background: var(--orange-dark); transform: translateY(-1px); }
+    .card-grid { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 18px; margin: 28px 0; }
+    .info-card { background: #fff; border: 1.5px solid var(--gray-2); border-radius: 22px; padding: 26px; box-shadow: var(--shadow-sm); }
+    .info-card ul, .steps { padding-left: 20px; margin-top: 12px; }
+    .info-card li, .steps li { margin-bottom: 9px; }
+    .steps-card { background: #fff; border-left: 4px solid var(--purple); border-radius: 0 20px 20px 0; padding: 26px 28px; margin: 28px 0; box-shadow: var(--shadow-sm); }
+    .steps-card h2 { font-size: 23px; font-weight: 900; color: var(--dark); margin-bottom: 12px; }
+    .steps { color: var(--gray-text); line-height: 1.75; }
+    .notice { background: #FFF7E7; border: 1px solid #F4D58D; border-radius: 18px; padding: 20px; color: #66512B; font-size: 14px; line-height: 1.7; margin-top: 22px; }
+    .deletion-content a:not(.request-button) { color: var(--orange); text-decoration: underline; text-underline-offset: 3px; }
+    @media (max-width: 720px) { .card-grid { grid-template-columns: 1fr; } .request-card, .info-card { padding: 22px; } }
+  </style>
+</head>
+<body>
+  <nav class="nav scrolled">
+    <div class="nav-inner">
+      <a href="../index.html" class="nav-logo"><img class="logo-icon" src="../assets/picadoo-icon.png" alt="" /><span class="logo-text">Picadoo</span></a>
+      <ul class="nav-links" id="primaryNavigation">
+        <li><a href="../index.html">Ana Sayfa</a></li>
+        <li><a href="privacy.html">Gizlilik</a></li>
+        <li><a href="contact.html">İletişim</a></li>
+      </ul>
+      <button class="nav-burger" id="navBurger" type="button" aria-label="Menüyü aç veya kapat" aria-controls="primaryNavigation" aria-expanded="false">
+        <span></span><span></span><span></span>
+      </button>
+    </div>
+  </nav>
+
+  <main class="deletion-content">
+    <span class="deletion-tag">GİZLİLİK VE HESAP YÖNETİMİ</span>
+    <h1>Picadoo hesabınızı silin</h1>
+    <p class="deletion-lead">Picadoo hesabınızın ve hesapla ilişkili uygulama verilerinin kalıcı olarak silinmesini uygulama içinden hemen başlatabilir veya uygulamaya erişemiyorsanız aşağıdaki e-posta bağlantısıyla talep edebilirsiniz.</p>
+
+    <section class="request-card" aria-labelledby="request-title">
+      <h2 id="request-title">Uygulamaya erişemiyor musunuz?</h2>
+      <p>Hesabı açarken kullandığınız e-posta adresinden bize silme talebi gönderin. Kimliğinizi doğrulamak için yalnızca hesap e-posta adresinizi isteyeceğiz; şifrenizi, çocuğunuzun bilgilerini veya ödeme bilgilerinizi e-postaya yazmayın. Talebiniz doğrulandıktan sonra en geç 30 gün içinde tamamlanır.</p>
+      <a class="request-button" href="mailto:algoritmatolyesi@gmail.com?subject=Picadoo%20Hesap%20Silme%20Talebi&amp;body=Merhaba%2C%0A%0APicadoo%20hesab%C4%B1m%C4%B1n%20ve%20hesab%C4%B1mla%20ili%C5%9Fkili%20verilerin%20silinmesini%20talep%20ediyorum.%0A%0AHesap%20e-posta%20adresim%3A%20%0A%0ATarih%3A%20">Hesap silme talebi gönder</a>
+      <p style="margin-top:14px;font-size:13px;">E-posta: <a href="mailto:algoritmatolyesi@gmail.com">algoritmatolyesi@gmail.com</a></p>
+    </section>
+
+    <section class="steps-card">
+      <h2>Uygulama içinden anında silme</h2>
+      <ol class="steps">
+        <li>Picadoo hesabınızla giriş yapın.</li>
+        <li><strong>Ebeveyn Alanı</strong> ekranını açın.</li>
+        <li><strong>Hesap İşlemleri → Hesabımı Sil</strong> seçeneğine dokunun.</li>
+        <li>Gösterilen iki kalıcı silme uyarısını onaylayın.</li>
+      </ol>
+    </section>
+
+    <div class="card-grid">
+      <section class="info-card">
+        <h2>Silinen veriler</h2>
+        <ul>
+          <li>Picadoo giriş hesabı ve ebeveyn e-posta adresi</li>
+          <li>Çocuk profili, tercihler ve ebeveyn ayarları</li>
+          <li>Boyama oturumları, kullanım ve aktivite kayıtları</li>
+          <li>Kaydedilmiş boyamalar ve hesapla ilişkili AI üretim kayıtları</li>
+          <li>Push bildirim belirteci, uygulama içi kredi ve anahtar bakiyeleri</li>
+        </ul>
+      </section>
+      <section class="info-card">
+        <h2>Saklanabilecek veriler</h2>
+        <p>Yasal yükümlülük, ödeme uyuşmazlığı, güvenlik veya dolandırıcılığı önleme amacıyla tutulması zorunlu sınırlı işlem kayıtları yalnız gerekli süre boyunca saklanabilir; sonrasında silinir veya anonimleştirilir. Google Play ve App Store satın alma geçmişleri ilgili mağazaların kendi politikalarına tabidir.</p>
+      </section>
+    </div>
+
+    <div class="notice"><strong>Abonelik uyarısı:</strong> Picadoo hesabını silmek Google Play veya App Store aboneliğini otomatik olarak iptal etmez. Devam eden aboneliğiniz varsa hesabı silmeden önce mağazanızın Abonelikler bölümünden iptal edin.</div>
+    <p style="margin-top:28px;">Verilerin işlenmesiyle ilgili ayrıntılar için <a href="privacy.html">Picadoo Gizlilik Politikası</a> ve <a href="kvkk.html">KVKK Aydınlatma Metni</a> sayfalarını inceleyebilirsiniz.</p>
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom" style="border-top:1px solid rgba(255,255,255,0.08);padding-top:24px;">
+        <p>© 2026 Picadoo. Tüm hakları saklıdır.</p>
+        <div class="footer-bottom-links"><a href="privacy.html">Gizlilik</a><a href="terms.html">Koşullar</a><a href="account-deletion.html">Hesap Silme</a><a href="contact.html">İletişim</a></div>
+      </div>
+    </div>
+  </footer>
+  <script src="../i18n-content.js"></script>
+  <script src="../i18n.js"></script>
+  <script src="../app.js"></script>
+</body>
+</html>
