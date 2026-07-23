@@ -9,6 +9,7 @@ const nextConfig: NextConfig = {
       ...pageNames.flatMap((page) => [
         { source: `/${page}.html`, destination: `/${page}`, permanent: true },
         { source: `/pages/${page}.html`, destination: `/${page}`, permanent: true },
+        { source: `/pages/${page}`, destination: `/${page}`, permanent: true },
       ]),
     ];
   },
