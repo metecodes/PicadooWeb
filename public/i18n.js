@@ -316,7 +316,7 @@
   }
 
   function updateLegalNotice(lang) {
-    const legalPage = /\/(privacy|terms|kvkk|account-deletion)(?:\.html)?$/.test(location.pathname);
+    const legalPage = /\/(privacy|terms|kvkk|account-deletion|eula)(?:\.html)?$/.test(location.pathname);
     let notice = document.querySelector('.legal-language-notice');
     if (!legalPage || lang === 'tr') {
       notice?.remove();

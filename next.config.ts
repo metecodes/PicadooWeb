@@ -1,6 +1,6 @@
 import type { NextConfig } from "next";
 
-const pageNames = ["premium", "parents", "contact", "privacy", "terms", "kvkk", "account-deletion"];
+const pageNames = ["premium", "parents", "contact", "privacy", "terms", "kvkk", "account-deletion", "eula"];
 
 const nextConfig: NextConfig = {
   async redirects() {
