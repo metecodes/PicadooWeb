@@ -36,7 +36,7 @@
       '8 Dil Desteği': '8 Languages',
       'Türkçe, İngilizce, Almanca, Fransızca, Arapça, İspanyolca, Rusça, İtalyanca.': 'Turkish, English, German, French, Arabic, Spanish, Russian, and Italian.',
       '3 Adımda': 'In 3 Steps', 'Boyama Macerası': 'Coloring Adventure', 'Fotoğraf Çek veya Seç': 'Take or Choose a Photo',
-      'Galeriden bir fotoğraf seçin veya kameranızla çekin. Fotoğraf kullanımı için cihaz izni gerekir.': 'Choose a photo from your gallery or take one with the camera. Device permission is required.',
+      'Galeriden bir fotoğraf seçin veya kameranızla çekin. Picadoo bu erişimi yalnızca fotoğrafı boyama sayfasına dönüştürmek için ister; örneğin bir oyuncak fotoğrafı yapay zeka ile karikatür çizime çevrilebilir.': 'Choose a photo from your gallery or take one with the camera. Picadoo uses this access only to turn the photo into a coloring page—for example, a toy photo can become a cartoon drawing with AI.',
       'AI Dönüştürsün': 'Let AI Transform It',
       'Karikatür, suluboya, kuru boya veya doodle stilini seçin. Her dönüşüm 1 kredi kullanır; işlem süresi bağlantıya göre değişebilir.': 'Choose cartoon, watercolor, colored-pencil, or doodle style. Each conversion uses 1 credit; processing time may vary.',
       'Boya ve Eğlen!': 'Color and Have Fun!',
