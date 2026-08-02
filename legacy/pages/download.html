@@ -63,10 +63,10 @@
     }
     @keyframes picadoo-spin { to { transform: rotate(360deg); } }
     .download-status { font-size: 15px; font-weight: 600; color: var(--dark, #1a1a1a); margin-bottom: 8px; }
-    .download-fallback { display: none; }
+    .download-pending { margin-bottom: 24px; }
+    .download-fallback { display: block; }
     html.picadoo-download-ready .download-pending { display: none; }
-    html.picadoo-download-ready .download-fallback { display: block; }
-    html.picadoo-download-pending .download-fallback { display: none; }
+    html.picadoo-download-pending .download-pending { display: block; }
     .download-fallback .store-buttons {
       display: flex;
       flex-direction: column;
@@ -115,20 +115,20 @@
     html.picadoo-download-ready[data-platform="ios"] .download-ios-note { display: block; }
   </style>
 </head>
-<body class="download-page" data-picadoo-auto-redirect="true">
+<body class="download-page">
   <nav class="nav scrolled">
     <div class="nav-inner">
-      <a href="../index.html" class="nav-logo">
+      <a href="/" class="nav-logo">
         <img class="logo-icon" src="../assets/picadoo-icon.png" alt="" />
         <span class="logo-text">Picadoo</span>
       </a>
       <div class="nav-cta">
-        <a href="../index.html" class="btn btn-ghost btn-sm">Ana Sayfa</a>
+        <a href="/" class="btn btn-ghost btn-sm">Ana Sayfa</a>
       </div>
     </div>
   </nav>
 
-  <main class="download-page-main">
+  <main class="download-page-main" data-picadoo-auto-redirect="true">
     <div class="download-card">
       <img src="../assets/picadoo-icon.png" alt="Picadoo" width="88" height="88" />
       <h1>Picadoo'yu İndir</h1>
@@ -152,7 +152,7 @@
           </a>
         </div>
         <p class="download-ios-note">iOS sürümü App Store'da yakında. Android kullanıcıları Google Play'den indirebilir.</p>
-        <a class="download-home" href="../index.html">← Ana sayfaya dön</a>
+        <a class="download-home" href="/">← Ana sayfaya dön</a>
       </div>
     </div>
   </main>

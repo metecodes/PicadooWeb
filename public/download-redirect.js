@@ -9,6 +9,11 @@
     return 'other';
   }
 
+  function showStoreChoices() {
+    document.documentElement.classList.remove('picadoo-download-pending');
+    document.documentElement.classList.add('picadoo-download-ready');
+  }
+
   function redirectToStore() {
     const platform = detectPlatform();
 
@@ -29,14 +34,22 @@
   window.picadooRedirectToStore = redirectToStore;
 
   function initAutoRedirect() {
-    if (document.body?.dataset.picadooAutoRedirect !== 'true') return;
+    const root = document.querySelector('[data-picadoo-auto-redirect]');
+    if (!root) {
+      showStoreChoices();
+      return;
+    }
 
     document.documentElement.classList.add('picadoo-download-pending');
     const redirected = redirectToStore();
+
     if (!redirected) {
-      document.documentElement.classList.remove('picadoo-download-pending');
-      document.documentElement.classList.add('picadoo-download-ready');
+      showStoreChoices();
+      return;
     }
+
+    // Redirect attempted but may not leave the page (in-app browser, popup blockers).
+    window.setTimeout(showStoreChoices, 2500);
   }
 
   if (document.readyState === 'loading') {
