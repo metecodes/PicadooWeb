@@ -403,7 +403,15 @@ window.PICADOO_I18N_CONTENT = {
     "%100 Reklamsız ve güvenli ortam": "100% Ad-free and safe environment",
     "Tüm kategoriler": "All categories",
     "%100 Reklamsız": "100% Ad-Free",
-    "✓ Sınırsız": "✓ Unlimited"
+    "✓ Sınırsız": "✓ Unlimited",
+    "19 Mini Oyun": "19 Mini Games",
+    "9 küçük + 10 büyük yaş oyunu": "9 younger + 10 older games",
+    "Baloncuk patlatmadan harf/sayı oyunlarına, labirent ve koşuya 1-10 yaşa özel iki ayrı oyun grubu.": "Two separate game groups for ages 1-10, from bubble popping to letters/numbers, maze, and runner games.",
+    "Sınırsız şablonlara, kayıtlı boyamalara, 19 eğitici mini oyuna ve JPG aktarımına erişin. AI kredileri esnek paketlerle sunulur.": "Access unlimited templates, saved colorings, 19 educational mini games, and JPG export. AI credits are offered in flexible packages.",
+    "19 mini oyunun tamamına erişim": "Access all 19 mini games",
+    "✓ 19 oyun": "✓ 19 games",
+    "Yaşa Göre 19 Oyun": "19 Games by Age",
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 mini games are offered in two separate categories for ages 0-6 (9 games) and ages 6-10 (10 games)."
   },
   "de": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo – sichere Mal- und Minispiele für Kinder",
@@ -809,7 +817,15 @@ window.PICADOO_I18N_CONTENT = {
     "%100 Reklamsız ve güvenli ortam": "100% Werbefreie und sichere Umgebung",
     "Tüm kategoriler": "Alle Kategorien",
     "%100 Reklamsız": "100% Werbefrei",
-    "✓ Sınırsız": "✓ Unbegrenzt"
+    "✓ Sınırsız": "✓ Unbegrenzt",
+    "19 Mini Oyun": "19 Minispiele",
+    "9 küçük + 10 büyük yaş oyunu": "9 Spiele für Kleine + 10 für Größere",
+    "Baloncuk patlatmadan harf/sayı oyunlarına, labirent ve koşuya 1-10 yaşa özel iki ayrı oyun grubu.": "Zwei Spielgruppen für 1-10 Jahre, von Seifenblasen bis Buchstaben/Zahlen, Labyrinth und Runner-Spielen.",
+    "Sınırsız şablonlara, kayıtlı boyamalara, 19 eğitici mini oyuna ve JPG aktarımına erişin. AI kredileri esnek paketlerle sunulur.": "Zugriff auf unbegrenzte Vorlagen, gespeicherte Ausmalbilder, 19 Bildungs-Minispiele und JPG-Export. KI-Guthaben in flexiblen Paketen.",
+    "19 mini oyunun tamamına erişim": "Zugriff auf alle 19 Minispiele",
+    "✓ 19 oyun": "✓ 19 Spiele",
+    "Yaşa Göre 19 Oyun": "19 Spiele nach Alter",
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 Minispiele in zwei Kategorien für 0-6 Jahre (9 Spiele) und 6-10 Jahre (10 Spiele)."
   },
   "fr": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo — Coloriages et mini-jeux sécurisés pour les enfants",
@@ -1215,7 +1231,15 @@ window.PICADOO_I18N_CONTENT = {
     "%100 Reklamsız ve güvenli ortam": "Environnement 100% sans publicité et sécurisé",
     "Tüm kategoriler": "Toutes les catégories",
     "%100 Reklamsız": "100% sans publicité",
-    "✓ Sınırsız": "✓ Illimité"
+    "✓ Sınırsız": "✓ Illimité",
+    "19 Mini Oyun": "19 mini-jeux",
+    "9 küçük + 10 büyük yaş oyunu": "9 jeux petits + 10 grands",
+    "Baloncuk patlatmadan harf/sayı oyunlarına, labirent ve koşuya 1-10 yaşa özel iki ayrı oyun grubu.": "Deux groupes de jeux pour les 1-10 ans, du papier bulle aux lettres/chiffres, labyrinthe et jeu de course.",
+    "Sınırsız şablonlara, kayıtlı boyamalara, 19 eğitici mini oyuna ve JPG aktarımına erişin. AI kredileri esnek paketlerle sunulur.": "Accédez à des modèles illimités, aux coloriages enregistrés, à 19 mini-jeux éducatifs et à l’export JPG. Crédits IA en packs flexibles.",
+    "19 mini oyunun tamamına erişim": "Accéder aux 19 mini-jeux",
+    "✓ 19 oyun": "✓ 19 jeux",
+    "Yaşa Göre 19 Oyun": "19 jeux par âge",
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 mini-jeux en deux catégories : 0-6 ans (9 jeux) et 6-10 ans (10 jeux)."
   },
   "ar": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "بيكادو — تلوين آمن وألعاب صغيرة للأطفال",
@@ -1621,7 +1645,15 @@ window.PICADOO_I18N_CONTENT = {
     "%100 Reklamsız ve güvenli ortam": "بيئة آمنة وخالية من الإعلانات 100%",
     "Tüm kategoriler": "جميع الفئات",
     "%100 Reklamsız": "%100 خالي من الإعلانات",
-    "✓ Sınırsız": "✓ غير محدود"
+    "✓ Sınırsız": "✓ غير محدود",
+    "19 Mini Oyun": "19 لعبة مصغرة",
+    "9 küçük + 10 büyük yaş oyunu": "9 للصغار + 10 للكبار",
+    "Baloncuk patlatmadan harf/sayı oyunlarına, labirent ve koşuya 1-10 yaşa özel iki ayrı oyun grubu.": "مجموعتان من الألعاب للأعمار 1-10، من تفقيع الفقاعات إلى الحروف والأرقام والمتاهة والجري.",
+    "Sınırsız şablonlara, kayıtlı boyamalara, 19 eğitici mini oyuna ve JPG aktarımına erişin. AI kredileri esnek paketlerle sunulur.": "الوصول إلى قوالب غير محدودة ورسومات محفوظة و 19 لعبة مصغرة تعليمية وتصدير JPG. رصيد الذكاء الاصطناعي متوفر بحزم مرنة.",
+    "19 mini oyunun tamamına erişim": "الوصول إلى جميع الألعاب المصغرة الـ 19",
+    "✓ 19 oyun": "✓ 19 لعبة",
+    "Yaşa Göre 19 Oyun": "19 لعبة حسب العمر",
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 لعبة مصغرة متوفرة في فئتين للأعمار 0-6 (9 ألعاب) والأعمار 6-10 (10 ألعاب)."
   },
   "es": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo: colorear y minijuegos seguros para niños",
@@ -2027,7 +2059,15 @@ window.PICADOO_I18N_CONTENT = {
     "%100 Reklamsız ve güvenli ortam": "Entorno 100% sin anuncios y seguro",
     "Tüm kategoriler": "Todas las categorías",
     "%100 Reklamsız": "100% Sin anuncios",
-    "✓ Sınırsız": "✓ Ilimitado"
+    "✓ Sınırsız": "✓ Ilimitado",
+    "19 Mini Oyun": "19 minijuegos",
+    "9 küçük + 10 büyük yaş oyunu": "9 juegos pequeños + 10 grandes",
+    "Baloncuk patlatmadan harf/sayı oyunlarına, labirent ve koşuya 1-10 yaşa özel iki ayrı oyun grubu.": "Dos grupos de juegos de 1 a 10 años, desde explotar burbujas hasta letras/números, laberintos y carreras.",
+    "Sınırsız şablonlara, kayıtlı boyamalara, 19 eğitici mini oyuna ve JPG aktarımına erişin. AI kredileri esnek paketlerle sunulur.": "Accede a plantillas ilimitadas, dibujos guardados, 19 minijuegos educativos y exportación a JPG. Créditos IA en paquetes flexibles.",
+    "19 mini oyunun tamamına erişim": "Acceso a los 19 minijuegos",
+    "✓ 19 oyun": "✓ 19 juegos",
+    "Yaşa Göre 19 Oyun": "19 juegos por edad",
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 minijuegos divididos en dos categorías: de 0 a 6 años (9 juegos) y de 6 a 10 años (10 juegos)."
   },
   "ru": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo — безопасные раскраски и мини-игры для детей",
@@ -2433,7 +2473,15 @@ window.PICADOO_I18N_CONTENT = {
     "%100 Reklamsız ve güvenli ortam": "100% Без рекламы и безопасная среда",
     "Tüm kategoriler": "Все категории",
     "%100 Reklamsız": "100% Без рекламы",
-    "✓ Sınırsız": "✓ Без ограничений"
+    "✓ Sınırsız": "✓ Без ограничений",
+    "19 Mini Oyun": "19 мини-игр",
+    "9 küçük + 10 büyük yaş oyunu": "9 для малышей + 10 для старших",
+    "Baloncuk patlatmadan harf/sayı oyunlarına, labirent ve koşuya 1-10 yaşa özel iki ayrı oyun grubu.": "Две группы игр для 1-10 лет: от лопания пузырей до букв/цифр, лабиринтов и раннера.",
+    "Sınırsız şablonlara, kayıtlı boyamalara, 19 eğitici mini oyuna ve JPG aktarımına erişin. AI kredileri esnek paketlerle sunulur.": "Доступ к неограниченным шаблонам, сохранённым раскраскам, 19 обучающим мини-играм и экспорту JPG. Кредиты ИИ в гибких пакетах.",
+    "19 mini oyunun tamamına erişim": "Доступ ко всем 19 мини-играм",
+    "✓ 19 oyun": "✓ 19 игр",
+    "Yaşa Göre 19 Oyun": "19 игр по возрасту",
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 мини-игр в двух категориях: 0-6 лет (9 игр) и 6-10 лет (10 игр)."
   },
   "it": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo: colorazione sicura e minigiochi per bambini",
@@ -2839,6 +2887,14 @@ window.PICADOO_I18N_CONTENT = {
     "%100 Reklamsız ve güvenli ortam": "Ambiente 100% senza pubblicità e sicuro",
     "Tüm kategoriler": "Tutte le categorie",
     "%100 Reklamsız": "100% Senza pubblicità",
-    "✓ Sınırsız": "✓ Illimitato"
+    "✓ Sınırsız": "✓ Illimitato",
+    "19 Mini Oyun": "19 minigiochi",
+    "9 küçük + 10 büyük yaş oyunu": "9 giochi piccoli + 10 grandi",
+    "Baloncuk patlatmadan harf/sayı oyunlarına, labirent ve koşuya 1-10 yaşa özel iki ayrı oyun grubu.": "Due gruppi di giochi per 1-10 anni, dalle bolle a lettere/numeri, labirinto e gioco di corsa.",
+    "Sınırsız şablonlara, kayıtlı boyamalara, 19 eğitici mini oyuna ve JPG aktarımına erişin. AI kredileri esnek paketlerle sunulur.": "Accesso a modelli illimitati, disegni salvati, 19 minigiochi educativi ed esportazione JPG. Crediti IA in pacchetti flessibili.",
+    "19 mini oyunun tamamına erişim": "Accesso a tutti i 19 minigiochi",
+    "✓ 19 oyun": "✓ 19 giochi",
+    "Yaşa Göre 19 Oyun": "19 giochi per età",
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 minigiochi in due categorie: 0-6 anni (9 giochi) e 6-10 anni (10 giochi)."
   }
 };
