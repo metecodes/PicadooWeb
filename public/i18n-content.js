@@ -411,7 +411,8 @@ window.PICADOO_I18N_CONTENT = {
     "19 mini oyunun tamamına erişim": "Access all 19 mini games",
     "✓ 19 oyun": "✓ 19 games",
     "Yaşa Göre 19 Oyun": "19 Games by Age",
-    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 mini games are offered in two separate categories for ages 0-6 (9 games) and ages 6-10 (10 games)."
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 mini games are offered in two separate categories for ages 0-6 (9 games) and ages 6-10 (10 games).",
+    "Özellikleri Gör": "See Features"
   },
   "de": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo – sichere Mal- und Minispiele für Kinder",
@@ -825,7 +826,8 @@ window.PICADOO_I18N_CONTENT = {
     "19 mini oyunun tamamına erişim": "Zugriff auf alle 19 Minispiele",
     "✓ 19 oyun": "✓ 19 Spiele",
     "Yaşa Göre 19 Oyun": "19 Spiele nach Alter",
-    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 Minispiele in zwei Kategorien für 0-6 Jahre (9 Spiele) und 6-10 Jahre (10 Spiele)."
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 Minispiele in zwei Kategorien für 0-6 Jahre (9 Spiele) und 6-10 Jahre (10 Spiele).",
+    "Özellikleri Gör": "Funktionen ansehen"
   },
   "fr": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo — Coloriages et mini-jeux sécurisés pour les enfants",
@@ -1239,7 +1241,8 @@ window.PICADOO_I18N_CONTENT = {
     "19 mini oyunun tamamına erişim": "Accéder aux 19 mini-jeux",
     "✓ 19 oyun": "✓ 19 jeux",
     "Yaşa Göre 19 Oyun": "19 jeux par âge",
-    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 mini-jeux en deux catégories : 0-6 ans (9 jeux) et 6-10 ans (10 jeux)."
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 mini-jeux en deux catégories : 0-6 ans (9 jeux) et 6-10 ans (10 jeux).",
+    "Özellikleri Gör": "Voir les fonctionnalités"
   },
   "ar": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "بيكادو — تلوين آمن وألعاب صغيرة للأطفال",
@@ -1653,7 +1656,8 @@ window.PICADOO_I18N_CONTENT = {
     "19 mini oyunun tamamına erişim": "الوصول إلى جميع الألعاب المصغرة الـ 19",
     "✓ 19 oyun": "✓ 19 لعبة",
     "Yaşa Göre 19 Oyun": "19 لعبة حسب العمر",
-    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 لعبة مصغرة متوفرة في فئتين للأعمار 0-6 (9 ألعاب) والأعمار 6-10 (10 ألعاب)."
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 لعبة مصغرة متوفرة في فئتين للأعمار 0-6 (9 ألعاب) والأعمار 6-10 (10 ألعاب).",
+    "Özellikleri Gör": "عرض الميزات"
   },
   "es": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo: colorear y minijuegos seguros para niños",
@@ -2067,7 +2071,8 @@ window.PICADOO_I18N_CONTENT = {
     "19 mini oyunun tamamına erişim": "Acceso a los 19 minijuegos",
     "✓ 19 oyun": "✓ 19 juegos",
     "Yaşa Göre 19 Oyun": "19 juegos por edad",
-    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 minijuegos divididos en dos categorías: de 0 a 6 años (9 juegos) y de 6 a 10 años (10 juegos)."
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 minijuegos divididos en dos categorías: de 0 a 6 años (9 juegos) y de 6 a 10 años (10 juegos).",
+    "Özellikleri Gör": "Ver funciones"
   },
   "ru": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo — безопасные раскраски и мини-игры для детей",
@@ -2481,7 +2486,8 @@ window.PICADOO_I18N_CONTENT = {
     "19 mini oyunun tamamına erişim": "Доступ ко всем 19 мини-играм",
     "✓ 19 oyun": "✓ 19 игр",
     "Yaşa Göre 19 Oyun": "19 игр по возрасту",
-    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 мини-игр в двух категориях: 0-6 лет (9 игр) и 6-10 лет (10 игр)."
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 мини-игр в двух категориях: 0-6 лет (9 игр) и 6-10 лет (10 игр).",
+    "Özellikleri Gör": "Смотреть функции"
   },
   "it": {
     "Picadoo — Çocuklar İçin Güvenli Boyama & Mini Oyunlar": "Picadoo: colorazione sicura e minigiochi per bambini",
@@ -2895,6 +2901,7 @@ window.PICADOO_I18N_CONTENT = {
     "19 mini oyunun tamamına erişim": "Accesso a tutti i 19 minigiochi",
     "✓ 19 oyun": "✓ 19 giochi",
     "Yaşa Göre 19 Oyun": "19 giochi per età",
-    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 minigiochi in due categorie: 0-6 anni (9 giochi) e 6-10 anni (10 giochi)."
+    "19 mini oyun 0-6 küçük yaş (9 oyun) ve 6-10 büyük yaş (10 oyun) grupları için iki ayrı kategoride sunulur.": "19 minigiochi in due categorie: 0-6 anni (9 giochi) e 6-10 anni (10 giochi).",
+    "Özellikleri Gör": "Vedi funzionalità"
   }
 };
